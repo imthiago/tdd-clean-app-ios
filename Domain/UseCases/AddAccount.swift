@@ -25,8 +25,3 @@ public struct AddAccountModel: Model {
     }
 }
 
-public extension AddAccountModel {
-    func toData() -> Data? {
-        return try? JSONEncoder().encode(self)
-    }
-}

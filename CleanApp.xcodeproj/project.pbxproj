@@ -16,6 +16,8 @@
 		AFB7018B251C1A0900C1800E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB7018A251C1A0900C1800E /* Model.swift */; };
 		AFB7018F251C1C1E00C1800E /* RemoteAddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB7018E251C1C1E00C1800E /* RemoteAddAccount.swift */; };
 		AFB70193251C1C5400C1800E /* HttpPostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB70192251C1C5400C1800E /* HttpPostClient.swift */; };
+		AFB701A9251C24C400C1800E /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB701A8251C24C400C1800E /* DomainError.swift */; };
+		AFB701AF251C269800C1800E /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB701AE251C269800C1800E /* HttpError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		AFB7018A251C1A0900C1800E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AFB7018E251C1C1E00C1800E /* RemoteAddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccount.swift; sourceTree = "<group>"; };
 		AFB70192251C1C5400C1800E /* HttpPostClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpPostClient.swift; sourceTree = "<group>"; };
+		AFB701A8251C24C400C1800E /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
+		AFB701AE251C269800C1800E /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 			children = (
 				AFB70198251C1C9E00C1800E /* UseCases */,
 				AFB70199251C1CBB00C1800E /* Models */,
+				AFB701A7251C24BA00C1800E /* Errors */,
 				AFB70151251BD05E00C1800E /* Info.plist */,
 			);
 			path = Domain;
@@ -177,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				AFB70192251C1C5400C1800E /* HttpPostClient.swift */,
+				AFB701AE251C269800C1800E /* HttpError.swift */,
 			);
 			path = Http;
 			sourceTree = "<group>";
@@ -187,6 +193,14 @@
 				AFB70170251BD29500C1800E /* RemoteAddAccountTests.swift */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		AFB701A7251C24BA00C1800E /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				AFB701A8251C24C400C1800E /* DomainError.swift */,
+			);
+			path = Errors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +352,7 @@
 			files = (
 				AFB7018B251C1A0900C1800E /* Model.swift in Sources */,
 				AFB70159251BD0F900C1800E /* AddAccount.swift in Sources */,
+				AFB701A9251C24C400C1800E /* DomainError.swift in Sources */,
 				AFB7015C251BD22600C1800E /* AccountModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFB70193251C1C5400C1800E /* HttpPostClient.swift in Sources */,
+				AFB701AF251C269800C1800E /* HttpError.swift in Sources */,
 				AFB7018F251C1C1E00C1800E /* RemoteAddAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
