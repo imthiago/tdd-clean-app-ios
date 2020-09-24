@@ -13,6 +13,7 @@
 		AFB70171251BD29500C1800E /* RemoteAddAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB70170251BD29500C1800E /* RemoteAddAccountTests.swift */; };
 		AFB70181251BD2D000C1800E /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB7014E251BD05E00C1800E /* Domain.framework */; };
 		AFB70182251BD2D000C1800E /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFB7014E251BD05E00C1800E /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFB7018B251C1A0900C1800E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB7018A251C1A0900C1800E /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		AFB7016B251BD29500C1800E /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB70170251BD29500C1800E /* RemoteAddAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccountTests.swift; sourceTree = "<group>"; };
 		AFB70172251BD29500C1800E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFB7018A251C1A0900C1800E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				AFB70158251BD0F900C1800E /* AddAccount.swift */,
 				AFB7015B251BD22600C1800E /* AccountModel.swift */,
 				AFB70151251BD05E00C1800E /* Info.plist */,
+				AFB7018A251C1A0900C1800E /* Model.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFB7018B251C1A0900C1800E /* Model.swift in Sources */,
 				AFB70159251BD0F900C1800E /* AddAccount.swift in Sources */,
 				AFB7015C251BD22600C1800E /* AccountModel.swift in Sources */,
 			);
