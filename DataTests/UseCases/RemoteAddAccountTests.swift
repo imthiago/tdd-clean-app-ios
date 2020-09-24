@@ -58,30 +58,6 @@ class RemoteAddAccountTests: XCTestCase {
 }
 
 extension RemoteAddAccountTests {
-    class HttpClientSpy : HttpPostClient {
-        var urls = [URL]()
-        var data: Data?
-        var completion: ((Result<Data, HttpError>) -> Void)?
-        
-        func post(to url: URL, with data: Data?, completion: @escaping (Result<Data, HttpError>) -> Void) {
-            self.urls.append(url)
-            self.data = data
-            self.completion = completion
-        }
-        
-        func completeWithError(_ error: HttpError) {
-            completion?(.failure(error))
-        }
-        
-        func completeWithData(_ data: Data) {
-            completion?(.success(data))
-        }
-    }
-    
-    func makeAddAccountModel() -> AddAccountModel {
-        AddAccountModel(name: "any_name", email: "any_email", password: "any_password", passwordConfirmation: "any_password")
-    }
-    
     func makeSut(to url: URL = URL(string: "http://any-url.com")!, file: StaticString = #file, line: UInt = #line) -> (sut: RemoteAddAccount, httpClientSpy: HttpClientSpy) {
         let httpClientSpy = HttpClientSpy()
         let sut = RemoteAddAccount(url: url, httpClient: httpClientSpy)
@@ -109,19 +85,5 @@ extension RemoteAddAccountTests {
         }
         action()
         wait(for: [exp], timeout: 1)
-    }
-    
-    func makeInvalidData() -> Data {
-        Data("invalid_data".utf8)
-    }
-    
-    func makeUrl() -> URL {
-        URL(string: "http://any-url.com")!
-    }
-    
-    func checkMemoryLeak(for instance: AnyObject, file: StaticString = #file, line: UInt = #line) {
-        addTeardownBlock { [weak instance] in
-            XCTAssertNil(instance, file: file, line: line)
-        }
     }
 }
