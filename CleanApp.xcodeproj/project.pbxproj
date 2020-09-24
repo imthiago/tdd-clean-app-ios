@@ -115,9 +115,8 @@
 		AFB7014F251BD05E00C1800E /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				AFB70158251BD0F900C1800E /* AddAccount.swift */,
-				AFB7015B251BD22600C1800E /* AccountModel.swift */,
-				AFB7018A251C1A0900C1800E /* Model.swift */,
+				AFB70198251C1C9E00C1800E /* UseCases */,
+				AFB70199251C1CBB00C1800E /* Models */,
 				AFB70151251BD05E00C1800E /* Info.plist */,
 			);
 			path = Domain;
@@ -126,8 +125,8 @@
 		AFB70164251BD29500C1800E /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				AFB7018E251C1C1E00C1800E /* RemoteAddAccount.swift */,
-				AFB70192251C1C5400C1800E /* HttpPostClient.swift */,
+				AFB7019C251C1CC400C1800E /* UseCases */,
+				AFB7019F251C1CCA00C1800E /* Http */,
 				AFB70166251BD29500C1800E /* Info.plist */,
 			);
 			path = Data;
@@ -136,7 +135,7 @@
 		AFB7016F251BD29500C1800E /* DataTests */ = {
 			isa = PBXGroup;
 			children = (
-				AFB70170251BD29500C1800E /* RemoteAddAccountTests.swift */,
+				AFB701A2251C1CE800C1800E /* UseCases */,
 				AFB70172251BD29500C1800E /* Info.plist */,
 			);
 			path = DataTests;
@@ -147,6 +146,47 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFB70198251C1C9E00C1800E /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				AFB70158251BD0F900C1800E /* AddAccount.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		AFB70199251C1CBB00C1800E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AFB7015B251BD22600C1800E /* AccountModel.swift */,
+				AFB7018A251C1A0900C1800E /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AFB7019C251C1CC400C1800E /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				AFB7018E251C1C1E00C1800E /* RemoteAddAccount.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		AFB7019F251C1CCA00C1800E /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				AFB70192251C1C5400C1800E /* HttpPostClient.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		AFB701A2251C1CE800C1800E /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				AFB70170251BD29500C1800E /* RemoteAddAccountTests.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
