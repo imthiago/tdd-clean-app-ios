@@ -14,3 +14,7 @@ func makeInvalidData() -> Data {
 func makeUrl() -> URL {
     URL(string: "http://any-url.com")!
 }
+
+func makeValidData() -> Data {
+    Data("{\"name\":\"Thiago Oliveira\"}".utf8)
+}
