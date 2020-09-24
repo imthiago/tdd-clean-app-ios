@@ -14,6 +14,8 @@
 		AFB70181251BD2D000C1800E /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB7014E251BD05E00C1800E /* Domain.framework */; };
 		AFB70182251BD2D000C1800E /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFB7014E251BD05E00C1800E /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AFB7018B251C1A0900C1800E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB7018A251C1A0900C1800E /* Model.swift */; };
+		AFB7018F251C1C1E00C1800E /* RemoteAddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB7018E251C1C1E00C1800E /* RemoteAddAccount.swift */; };
+		AFB70193251C1C5400C1800E /* HttpPostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB70192251C1C5400C1800E /* HttpPostClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		AFB70170251BD29500C1800E /* RemoteAddAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccountTests.swift; sourceTree = "<group>"; };
 		AFB70172251BD29500C1800E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFB7018A251C1A0900C1800E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		AFB7018E251C1C1E00C1800E /* RemoteAddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccount.swift; sourceTree = "<group>"; };
+		AFB70192251C1C5400C1800E /* HttpPostClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpPostClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +117,8 @@
 			children = (
 				AFB70158251BD0F900C1800E /* AddAccount.swift */,
 				AFB7015B251BD22600C1800E /* AccountModel.swift */,
-				AFB70151251BD05E00C1800E /* Info.plist */,
 				AFB7018A251C1A0900C1800E /* Model.swift */,
+				AFB70151251BD05E00C1800E /* Info.plist */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -122,6 +126,8 @@
 		AFB70164251BD29500C1800E /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				AFB7018E251C1C1E00C1800E /* RemoteAddAccount.swift */,
+				AFB70192251C1C5400C1800E /* HttpPostClient.swift */,
 				AFB70166251BD29500C1800E /* Info.plist */,
 			);
 			path = Data;
@@ -234,6 +240,7 @@
 					};
 					AFB70162251BD29500C1800E = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 					AFB7016A251BD29500C1800E = {
 						CreatedOnToolsVersion = 12.0;
@@ -299,6 +306,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFB70193251C1C5400C1800E /* HttpPostClient.swift in Sources */,
+				AFB7018F251C1C1E00C1800E /* RemoteAddAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +513,7 @@
 		AFB70175251BD29500C1800E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -522,6 +532,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -529,6 +540,7 @@
 		AFB70176251BD29500C1800E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -554,6 +566,7 @@
 		AFB70178251BD29500C1800E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = DataTests/Info.plist;
@@ -573,6 +586,7 @@
 		AFB70179251BD29500C1800E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = DataTests/Info.plist;
