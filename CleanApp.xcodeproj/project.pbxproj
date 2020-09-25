@@ -19,6 +19,7 @@
 		AF53D1F3251D35CC007D88FA /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53D1B1251D32EC007D88FA /* TestExtensions.swift */; };
 		AF53D1FA251D35D5007D88FA /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53D1B7251D334C007D88FA /* TestFactories.swift */; };
 		AF53D200251D3671007D88FA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AF53D1FF251D3671007D88FA /* Alamofire */; };
+		AF65665F251D9FB300C4C692 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF65665E251D9FB300C4C692 /* AlamofireAdapter.swift */; };
 		AFB70159251BD0F900C1800E /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB70158251BD0F900C1800E /* AddAccount.swift */; };
 		AFB7015C251BD22600C1800E /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB7015B251BD22600C1800E /* AccountModel.swift */; };
 		AFB7016C251BD29500C1800E /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB70163251BD29500C1800E /* Data.framework */; };
@@ -99,6 +100,7 @@
 		AF53D1D3251D34C1007D88FA /* InfraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF53D1D8251D34C1007D88FA /* AlamofireAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapterTests.swift; sourceTree = "<group>"; };
 		AF53D1DA251D34C1007D88FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF65665E251D9FB300C4C692 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		AFB7014E251BD05E00C1800E /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB70151251BD05E00C1800E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFB70158251BD0F900C1800E /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 		AF53D1CC251D34C1007D88FA /* Infra */ = {
 			isa = PBXGroup;
 			children = (
+				AF656663251D9FF900C4C692 /* Http */,
 				AF53D1CE251D34C1007D88FA /* Info.plist */,
 			);
 			path = Infra;
@@ -200,6 +203,14 @@
 				AF53D1DA251D34C1007D88FA /* Info.plist */,
 			);
 			path = InfraTests;
+			sourceTree = "<group>";
+		};
+		AF656663251D9FF900C4C692 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				AF65665E251D9FB300C4C692 /* AlamofireAdapter.swift */,
+			);
+			path = Http;
 			sourceTree = "<group>";
 		};
 		AFB70132251BCFBA00C1800E = {
@@ -452,6 +463,7 @@
 				TargetAttributes = {
 					AF53D1CA251D34C1007D88FA = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 					AF53D1D2251D34C1007D88FA = {
 						CreatedOnToolsVersion = 12.0;
@@ -537,6 +549,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF65665F251D9FB300C4C692 /* AlamofireAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +626,7 @@
 		AF53D1DD251D34C1007D88FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -631,6 +645,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -638,6 +653,7 @@
 		AF53D1DE251D34C1007D88FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -663,6 +679,7 @@
 		AF53D1E0251D34C1007D88FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = InfraTests/Info.plist;
@@ -682,6 +699,7 @@
 		AF53D1E1251D34C1007D88FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = InfraTests/Info.plist;
