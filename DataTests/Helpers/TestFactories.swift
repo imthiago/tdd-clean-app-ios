@@ -26,3 +26,7 @@ func makeError() -> Error {
 func makeHttpResponse(statusCode: Int = 200) -> HTTPURLResponse? {
     HTTPURLResponse(url: makeUrl(), statusCode: statusCode, httpVersion: nil, headerFields: nil)
 }
+
+func makeEmptyData() -> Data {
+    Data()
+}
