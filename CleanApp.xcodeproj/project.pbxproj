@@ -27,6 +27,8 @@
 		AF56822625242CA800E48AC8 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56822525242CA800E48AC8 /* TestFactories.swift */; };
 		AF56824125242E9100E48AC8 /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF56823825242E9100E48AC8 /* UI.framework */; };
 		AF56824625242E9100E48AC8 /* SignUpViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56824525242E9100E48AC8 /* SignUpViewControllerTests.swift */; };
+		AF56826F2524302F00E48AC8 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6A056C251E76D40074451A /* Presentation.framework */; };
+		AF5682702524302F00E48AC8 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF6A056C251E76D40074451A /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AF56910A25240C75000FAAA9 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53D1B1251D32EC007D88FA /* TestExtensions.swift */; };
 		AF56911225240EAC000FAAA9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56911125240EAC000FAAA9 /* LoadingView.swift */; };
 		AF56911B25242409000FAAA9 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56911A25242409000FAAA9 /* SignUpViewModel.swift */; };
@@ -74,6 +76,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = AF56823725242E9100E48AC8;
 			remoteInfo = UI;
+		};
+		AF5682712524302F00E48AC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFB70133251BCFBA00C1800E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF6A056B251E76D40074451A;
+			remoteInfo = Presentation;
 		};
 		AF65667D251DA41200C4C692 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -134,6 +143,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				AF53D1EF251D3593007D88FA /* Data.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF5682732524302F00E48AC8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AF5682702524302F00E48AC8 /* Presentation.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +246,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF56826F2524302F00E48AC8 /* Presentation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,10 +717,12 @@
 				AF56823425242E9100E48AC8 /* Sources */,
 				AF56823525242E9100E48AC8 /* Frameworks */,
 				AF56823625242E9100E48AC8 /* Resources */,
+				AF5682732524302F00E48AC8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AF5682722524302F00E48AC8 /* PBXTargetDependency */,
 			);
 			name = UI;
 			productName = UI;
@@ -1108,6 +1131,11 @@
 			target = AF56823725242E9100E48AC8 /* UI */;
 			targetProxy = AF56824225242E9100E48AC8 /* PBXContainerItemProxy */;
 		};
+		AF5682722524302F00E48AC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF6A056B251E76D40074451A /* Presentation */;
+			targetProxy = AF5682712524302F00E48AC8 /* PBXContainerItemProxy */;
+		};
 		AF65667E251DA41200C4C692 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AFB70162251BD29500C1800E /* Data */;
@@ -1168,6 +1196,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1195,6 +1224,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1215,6 +1245,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.imthiago.InfraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1235,6 +1266,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.imthiago.InfraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1260,6 +1292,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1285,6 +1318,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1304,6 +1338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.imthiago.UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1323,6 +1358,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.imthiago.UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1342,6 +1378,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.imthiago.UseCasesIntegrationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1361,6 +1398,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.imthiago.UseCasesIntegrationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1387,6 +1425,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1414,6 +1453,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1434,6 +1474,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.imthiago.PresentationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1454,6 +1495,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.imthiago.PresentationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1602,6 +1644,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1629,6 +1672,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1655,6 +1699,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1682,6 +1727,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1702,6 +1748,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.imthiago.DataTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1722,6 +1769,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.imthiago.DataTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
