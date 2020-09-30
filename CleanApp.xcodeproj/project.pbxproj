@@ -23,6 +23,7 @@
 		AF56910A25240C75000FAAA9 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53D1B1251D32EC007D88FA /* TestExtensions.swift */; };
 		AF56911225240EAC000FAAA9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56911125240EAC000FAAA9 /* LoadingView.swift */; };
 		AF56911B25242409000FAAA9 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56911A25242409000FAAA9 /* SignUpViewModel.swift */; };
+		AF56912F25242484000FAAA9 /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56912E25242484000FAAA9 /* SignUpMapper.swift */; };
 		AF5B8A5925239EAB0057714F /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53D1C2251D33FF007D88FA /* AccountModelFactory.swift */; };
 		AF65665F251D9FB300C4C692 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF65665E251D9FB300C4C692 /* AlamofireAdapter.swift */; };
 		AF65666F251DA08200C4C692 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF65666E251DA08200C4C692 /* UrlProtocolStub.swift */; };
@@ -149,6 +150,7 @@
 		AF53D1DA251D34C1007D88FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF56911125240EAC000FAAA9 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		AF56911A25242409000FAAA9 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		AF56912E25242484000FAAA9 /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
 		AF65665E251D9FB300C4C692 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		AF65666E251DA08200C4C692 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		AF656677251DA41200C4C692 /* UseCasesIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -294,6 +296,7 @@
 			children = (
 				AF6A0595251E7F450074451A /* SignUpPresenter.swift */,
 				AF56911A25242409000FAAA9 /* SignUpViewModel.swift */,
+				AF56912E25242484000FAAA9 /* SignUpMapper.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -844,6 +847,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF56912F25242484000FAAA9 /* SignUpMapper.swift in Sources */,
 				AF6A0596251E7F450074451A /* SignUpPresenter.swift in Sources */,
 				AF56911225240EAC000FAAA9 /* LoadingView.swift in Sources */,
 				AF56911B25242409000FAAA9 /* SignUpViewModel.swift in Sources */,
