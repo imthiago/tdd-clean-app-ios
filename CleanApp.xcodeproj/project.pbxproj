@@ -45,6 +45,7 @@
 		AF6A05A7251E7FE80074451A /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6A05A6251E7FE80074451A /* AlertView.swift */; };
 		AF6A05D0251E83620074451A /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6A05CF251E83620074451A /* EmailValidator.swift */; };
 		AF732AB22525821800560522 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF732AB12525821800560522 /* TestExtensions.swift */; };
+		AFA72A9725262C8D00FA6B81 /* UiViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA72A9625262C8D00FA6B81 /* UiViewControllerExtensions.swift */; };
 		AFB70159251BD0F900C1800E /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB70158251BD0F900C1800E /* AddAccount.swift */; };
 		AFB7015C251BD22600C1800E /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB7015B251BD22600C1800E /* AccountModel.swift */; };
 		AFB7016C251BD29500C1800E /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB70163251BD29500C1800E /* Data.framework */; };
@@ -214,6 +215,7 @@
 		AF6A05A6251E7FE80074451A /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		AF6A05CF251E83620074451A /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		AF732AB12525821800560522 /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
+		AFA72A9625262C8D00FA6B81 /* UiViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiViewControllerExtensions.swift; sourceTree = "<group>"; };
 		AFB7014E251BD05E00C1800E /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB70151251BD05E00C1800E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFB70158251BD0F900C1800E /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -401,6 +403,7 @@
 		AF56823925242E9100E48AC8 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				AFA72A9525262C6E00FA6B81 /* Helpers */,
 				AF732A992525811A00560522 /* Scenes */,
 				AF56823B25242E9100E48AC8 /* Info.plist */,
 			);
@@ -547,6 +550,14 @@
 			isa = PBXGroup;
 			children = (
 				AF732AB12525821800560522 /* TestExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AFA72A9525262C6E00FA6B81 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AFA72A9625262C8D00FA6B81 /* UiViewControllerExtensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1083,6 +1094,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA72A9725262C8D00FA6B81 /* UiViewControllerExtensions.swift in Sources */,
 				AF568298252432BB00E48AC8 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
