@@ -18,9 +18,15 @@ class SignUpViewControllerTests: XCTestCase {
         XCTAssertEqual(sut.loadingIndicator?.isAnimating, false)
     }
     
-    func test_sut_implements_isLoadingView() {
+    func test_sut_implements_loadingView() {
         let sb = UIStoryboard(name: "SignUp", bundle: Bundle(for: SignUpViewController.self))
         let sut = sb.instantiateViewController(identifier: "SignUpViewController") as! SignUpViewController
         XCTAssertNotNil(sut as LoadingView)
+    }
+    
+    func test_sut_implements_alertView() {
+        let sb = UIStoryboard(name: "SignUp", bundle: Bundle(for: SignUpViewController.self))
+        let sut = sb.instantiateViewController(identifier: "SignUpViewController") as! SignUpViewController
+        XCTAssertNotNil(sut as AlertView)
     }
 }
