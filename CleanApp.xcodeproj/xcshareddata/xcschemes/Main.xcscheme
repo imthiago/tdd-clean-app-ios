@@ -38,16 +38,6 @@
                ReferencedContainer = "container:CleanApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AF21DC2825268F5700B86C12"
-               BuildableName = "MainUITests.xctest"
-               BlueprintName = "MainUITests"
-               ReferencedContainer = "container:CleanApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
