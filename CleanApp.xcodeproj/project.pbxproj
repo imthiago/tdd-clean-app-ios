@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AF090F77252125F100BDB3E6 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6A0579251E76D40074451A /* SignUpPresenterTests.swift */; };
+		AF0984BE2526BD37008AC834 /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0984BD2526BD37008AC834 /* UseCaseFactory.swift */; };
+		AF0984CB2526BE26008AC834 /* SignUpComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0984CA2526BE26008AC834 /* SignUpComposer.swift */; };
 		AF21DBB42526865E00B86C12 /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF21DBAB2526865E00B86C12 /* Validation.framework */; };
 		AF21DBB92526865E00B86C12 /* EmailValidatorAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21DBB82526865E00B86C12 /* EmailValidatorAdapterTests.swift */; };
 		AF21DBE62526881200B86C12 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6A056C251E76D40074451A /* Presentation.framework */; };
@@ -29,7 +31,7 @@
 		AF21DCA02526914C00B86C12 /* UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF56823825242E9100E48AC8 /* UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AF21DCAD2526915200B86C12 /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF21DBAB2526865E00B86C12 /* Validation.framework */; };
 		AF21DCAE2526915200B86C12 /* Validation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF21DBAB2526865E00B86C12 /* Validation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AF21DCBD252691DE00B86C12 /* SignUpFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21DCBC252691DE00B86C12 /* SignUpFactory.swift */; };
+		AF21DCBD252691DE00B86C12 /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21DCBC252691DE00B86C12 /* ControllerFactory.swift */; };
 		AF53D1AD251D2894007D88FA /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53D1AC251D2894007D88FA /* ExtensionHelpers.swift */; };
 		AF53D1B2251D32EC007D88FA /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53D1B1251D32EC007D88FA /* TestExtensions.swift */; };
 		AF53D1B8251D334C007D88FA /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53D1B7251D334C007D88FA /* TestFactories.swift */; };
@@ -296,6 +298,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AF0984BD2526BD37008AC834 /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
+		AF0984CA2526BE26008AC834 /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
 		AF21DBAB2526865E00B86C12 /* Validation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Validation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF21DBAE2526865E00B86C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF21DBB32526865E00B86C12 /* ValidationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValidationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -312,7 +316,7 @@
 		AF21DC2425268F5700B86C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF21DC2925268F5700B86C12 /* MainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF21DC2F25268F5700B86C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF21DCBC252691DE00B86C12 /* SignUpFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFactory.swift; sourceTree = "<group>"; };
+		AF21DCBC252691DE00B86C12 /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
 		AF53D1AC251D2894007D88FA /* ExtensionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
 		AF53D1B1251D32EC007D88FA /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		AF53D1B7251D334C007D88FA /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
@@ -496,6 +500,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF0984C92526BE19008AC834 /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				AF0984CA2526BE26008AC834 /* SignUpComposer.swift */,
+			);
+			path = Composers;
+			sourceTree = "<group>";
+		};
 		AF21DBAC2526865E00B86C12 /* Validation */ = {
 			isa = PBXGroup;
 			children = (
@@ -517,6 +529,7 @@
 		AF21DC0A25268F5600B86C12 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				AF0984C92526BE19008AC834 /* Composers */,
 				AF21DCBB252691D400B86C12 /* Factories */,
 				AF21DC0B25268F5600B86C12 /* AppDelegate.swift */,
 				AF21DC0D25268F5600B86C12 /* SceneDelegate.swift */,
@@ -546,7 +559,8 @@
 		AF21DCBB252691D400B86C12 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				AF21DCBC252691DE00B86C12 /* SignUpFactory.swift */,
+				AF21DCBC252691DE00B86C12 /* ControllerFactory.swift */,
+				AF0984BD2526BD37008AC834 /* UseCaseFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -1503,9 +1517,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF0984BE2526BD37008AC834 /* UseCaseFactory.swift in Sources */,
 				AF21DC0C25268F5600B86C12 /* AppDelegate.swift in Sources */,
-				AF21DCBD252691DE00B86C12 /* SignUpFactory.swift in Sources */,
+				AF21DCBD252691DE00B86C12 /* ControllerFactory.swift in Sources */,
 				AF21DC0E25268F5600B86C12 /* SceneDelegate.swift in Sources */,
+				AF0984CB2526BE26008AC834 /* SignUpComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

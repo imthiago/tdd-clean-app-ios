@@ -13,9 +13,9 @@ import Domain
 class AddAccountIntegrationTests: XCTestCase {
     func test_add_account_successfully() {
         let alamofireAdapter = AlamofireAdapter()
-        let url = URL(string: "https://clean-node-api.herokuapp.com/api/signup")!
+        let url = URL(string: "https://fordevs.herokuapp.com/api/signup")!
         let sut = RemoteAddAccount(url: url, httpClient: alamofireAdapter)
-        let addAccountModel = AddAccountModel(name: "Thiago Oliveira", email: "thiago@outlook.com.br", password: "Senha@123", passwordConfirmation: "Senha@123")
+        let addAccountModel = AddAccountModel(name: "Thiago Oliveira", email: "thiago12@outlook.com.br", password: "Senha@123", passwordConfirmation: "Senha@123")
         let exp = expectation(description: "waiting")
         sut.add(addAccountModel: addAccountModel) { result in
             switch result {
@@ -33,7 +33,7 @@ class AddAccountIntegrationTests: XCTestCase {
     
     func test_add_account_failure() {
         let alamofireAdapter = AlamofireAdapter()
-        let url = URL(string: "https://clean-node-api.herokuapp.com/api/signup")!
+        let url = URL(string: "httpss://fordevs.herokuapp.com/api/signup")!
         let sut = RemoteAddAccount(url: url, httpClient: alamofireAdapter)
         let addAccountModel = AddAccountModel(name: "Thiago Oliveira", email: "thiago@outlook.com.br", password: "Senha@123", passwordConfirmation: "Senha@1234")
         let exp = expectation(description: "waiting")
