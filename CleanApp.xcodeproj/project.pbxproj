@@ -35,7 +35,6 @@
 		AF21DCA02526914C00B86C12 /* UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF56823825242E9100E48AC8 /* UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AF21DCAD2526915200B86C12 /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF21DBAB2526865E00B86C12 /* Validation.framework */; };
 		AF21DCAE2526915200B86C12 /* Validation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF21DBAB2526865E00B86C12 /* Validation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AF21DCBD252691DE00B86C12 /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21DCBC252691DE00B86C12 /* ControllerFactory.swift */; };
 		AF53D1AD251D2894007D88FA /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53D1AC251D2894007D88FA /* ExtensionHelpers.swift */; };
 		AF53D1B2251D32EC007D88FA /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53D1B1251D32EC007D88FA /* TestExtensions.swift */; };
 		AF53D1B8251D334C007D88FA /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53D1B7251D334C007D88FA /* TestFactories.swift */; };
@@ -313,7 +312,6 @@
 		AF21DC1925268F5700B86C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF21DC1E25268F5700B86C12 /* MainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF21DC2425268F5700B86C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF21DCBC252691DE00B86C12 /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
 		AF53D1AC251D2894007D88FA /* ExtensionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
 		AF53D1B1251D32EC007D88FA /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		AF53D1B7251D334C007D88FA /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
@@ -551,7 +549,6 @@
 		AF21DCBB252691D400B86C12 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				AF21DCBC252691DE00B86C12 /* ControllerFactory.swift */,
 				AF0984BD2526BD37008AC834 /* UseCaseFactory.swift */,
 			);
 			path = Factories;
@@ -1480,7 +1477,6 @@
 			files = (
 				AF0984BE2526BD37008AC834 /* UseCaseFactory.swift in Sources */,
 				AF21DC0C25268F5600B86C12 /* AppDelegate.swift in Sources */,
-				AF21DCBD252691DE00B86C12 /* ControllerFactory.swift in Sources */,
 				AF21DC0E25268F5600B86C12 /* SceneDelegate.swift in Sources */,
 				AF0985352526C65F008AC834 /* WeakVarProxy.swift in Sources */,
 				AF0984CB2526BE26008AC834 /* SignUpComposer.swift in Sources */,
