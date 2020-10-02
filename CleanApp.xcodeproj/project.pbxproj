@@ -13,6 +13,7 @@
 		AF0984E12526C0CD008AC834 /* SignUpIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0984E02526C0CD008AC834 /* SignUpIntegrationTests.swift */; };
 		AF0985012526C17A008AC834 /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56820E252427FB00E48AC8 /* AddAccountSpy.swift */; };
 		AF09850C2526C1A1008AC834 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53D1B1251D32EC007D88FA /* TestExtensions.swift */; };
+		AF0985352526C65F008AC834 /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0985342526C65F008AC834 /* WeakVarProxy.swift */; };
 		AF21DBB42526865E00B86C12 /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF21DBAB2526865E00B86C12 /* Validation.framework */; };
 		AF21DBB92526865E00B86C12 /* EmailValidatorAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21DBB82526865E00B86C12 /* EmailValidatorAdapterTests.swift */; };
 		AF21DBE62526881200B86C12 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6A056C251E76D40074451A /* Presentation.framework */; };
@@ -297,6 +298,7 @@
 		AF0984BD2526BD37008AC834 /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
 		AF0984CA2526BE26008AC834 /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
 		AF0984E02526C0CD008AC834 /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
+		AF0985342526C65F008AC834 /* WeakVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakVarProxy.swift; sourceTree = "<group>"; };
 		AF21DBAB2526865E00B86C12 /* Validation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Validation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF21DBAE2526865E00B86C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF21DBB32526865E00B86C12 /* ValidationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValidationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -496,6 +498,14 @@
 			path = Composers;
 			sourceTree = "<group>";
 		};
+		AF0985332526C651008AC834 /* Proxies */ = {
+			isa = PBXGroup;
+			children = (
+				AF0985342526C65F008AC834 /* WeakVarProxy.swift */,
+			);
+			path = Proxies;
+			sourceTree = "<group>";
+		};
 		AF21DBAC2526865E00B86C12 /* Validation */ = {
 			isa = PBXGroup;
 			children = (
@@ -517,6 +527,7 @@
 		AF21DC0A25268F5600B86C12 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				AF0985332526C651008AC834 /* Proxies */,
 				AF0984C92526BE19008AC834 /* Composers */,
 				AF21DCBB252691D400B86C12 /* Factories */,
 				AF21DC0B25268F5600B86C12 /* AppDelegate.swift */,
@@ -1471,6 +1482,7 @@
 				AF21DC0C25268F5600B86C12 /* AppDelegate.swift in Sources */,
 				AF21DCBD252691DE00B86C12 /* ControllerFactory.swift in Sources */,
 				AF21DC0E25268F5600B86C12 /* SceneDelegate.swift in Sources */,
+				AF0985352526C65F008AC834 /* WeakVarProxy.swift in Sources */,
 				AF0984CB2526BE26008AC834 /* SignUpComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
